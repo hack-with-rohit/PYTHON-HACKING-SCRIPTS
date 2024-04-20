@@ -6,10 +6,11 @@ import pyfiglet
 
 msg = pyfiglet.figlet_format("MAC spoofing is a Home Address !!!!")
 print(msg)
+n=input("Enter your Network interface eth0 or wlan0 : ")
 i=input("Enter New Home Address to Fast Spoof : ")
-subprocess.call(["ifconfig","wlan0","down"])
-subprocess.call(["ifconfig","wlan0","hw","ether",i])
-subprocess.call(["ifconfig","wlan0","up"])
+subprocess.call(["ifconfig",n,"down"])
+subprocess.call(["ifconfig",n,"hw","ether",i])
+subprocess.call(["ifconfig",n","up"])
 
 print("Home address changed Successfully!!!")
 
